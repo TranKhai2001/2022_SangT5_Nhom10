@@ -768,7 +768,7 @@
             xhttp.send();
 
         }
-        executeData();
+        executeData1();
 
     </script>
 
