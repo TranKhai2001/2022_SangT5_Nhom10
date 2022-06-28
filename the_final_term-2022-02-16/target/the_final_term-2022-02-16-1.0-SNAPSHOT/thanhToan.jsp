@@ -5,7 +5,7 @@
 <%@ page import="com.example.the_final_term20220216.functions.UserAccount" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.example.the_final_term20220216.functions.UserAddress" %>
-<%@ page import="com.example.the_final_term20220216.functions.Cart" %>
+<%@ page import="com.example.the_final_term20220216.bean.Cart" %>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 
 <%
