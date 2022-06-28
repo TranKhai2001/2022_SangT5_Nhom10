@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="the_final_term-2022-02-16:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>the_final_term-2022-02-16</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="the_final_term-2022-02-16-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="the_final_term-2022-02-16:war exploded" />
+    </root>
+  </artifact>
+</component>
