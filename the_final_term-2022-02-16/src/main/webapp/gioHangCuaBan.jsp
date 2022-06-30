@@ -645,7 +645,7 @@
                 let rawResult = xhttp.response;
                 let result = rawResult.substring(0,rawResult.length-2);
                 if(result === 'true'){
-                    executeData();
+                    executeData1();
                     alert("xóa sản phẩm "+name_product +" THÀNH CÔNG");
                 }else{
                     alert("xóa sản phẩm "+name_product +" THẤT BẠI");
@@ -665,7 +665,7 @@
             if (confirm("bạn có chắc muốn xóa TẤT CẢ sản phẩm? ")) {
                 const xhttp = new XMLHttpRequest();
                 xhttp.onload = function() {
-                    executeData();
+                    executeData1();
                 }
 
                 xhttp.open("GET", "RemoveAllCart?id_user=<%=ua.getId_user()%>");
