@@ -25,17 +25,18 @@ public class LienHe extends HttpServlet {
         String mess = request.getParameter("mes");
         Contact.addContact(email,name,phone,mess);
         String line = "<script>window.setTimeout(function(){window.location.href = \"TrangChu\";}, 1000);</script>";
-        response.getWriter().println();
-        System.out.println("<!DOCTYPE html>");
-        System.out.println("<html><head>");
-        System.out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>");
-        System.out.println("<title>notice</title></head>");
-        System.out.println("<body>");
-        System.out.println("<h1>thông tin của bạn đã PrintWriter out = response.getWriter();\n" +
-                "        outđược ghi lại </h1>"+line);
+//        response.getWriter().println();
+        PrintWriter out = response.getWriter();
+        out.println("<!DOCTYPE html>");
+        out.println("<html><head>");
+        out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>");
+        out.println("<title>notice</title></head>");
+        out.println("<body>");
+        out.println("<h1>thông tin của bạn đã \n" +
+                " được ghi lại </h1>"+line);
         // Echo client's request information
         // Generate a random number upon each request
-        System.out.println("</body>");
-        System.out.println("</html>");
+        out.println("</body>");
+        out.println("</html>");
     }
 }
